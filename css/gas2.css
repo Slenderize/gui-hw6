@@ -1,0 +1,57 @@
+      .container{
+			overflow: hidden
+			}
+            tr{
+			transition:all .25s ease-in-out
+			}
+            tr:hover{
+			background-color:#EEE;cursor: pointer
+			}
+			
+			#all{
+			border-style: outset;
+			border-width: 7px;
+			border-color: coral;
+			padding: 10px;
+			text-align: center;
+			}
+			
+			#table1{
+			margin: auto;
+			width: 50%;
+			border-style: outset;
+			border-width: 7px;
+			border-color: coral;
+			padding: 10px;
+			text-align: center;
+			}
+			
+			thead {
+			color:	#20B2AA;
+			}
+			
+			h3{
+			    text-align: center;
+			}
+			
+			p{
+				text-align: center;
+			}
+			
+			body {
+			background-image: url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg");
+			background-color: #cccccc;
+			color: #ffffff; 
+			font-family: "Libre Baskerville", serif; line-height; 
+			text-shadow: 0 1px 1px #fff;
+			font-size: 21px; 
+			}
+			p { 
+			color: #7a7c7f; 
+			font-size: 29px; 
+			font-family: "Libre Baskerville", serif; 
+			line-height: 45px; 
+			text-align: center; 
+			text-shadow: 0 1px 1px #fff; 
+			padding-top: 20px; 
+			}

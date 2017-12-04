@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <!--Name: Chhayhout Chhoeu, Chhayhout_chhoeu@student.uml.edu
+  Computer Science Department, UMass Lowell Comp.4610, GUI Programming
+  File: pwd/usr/cs/2018/cchhoeu/index_html, Created: 03-Dec-2017.
+  Created: 03-Dec-2017.-->
+    <head>
+  <title>Homework #5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/gas2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<a href="http://www.cs.uml.edu/~cchhoeu/"><center>Home</a>
+    </head>
+    <body>
+	<script src="updatedtab.js"></script>
+	  <script>
+    $( document ).ready(function() {
+        slider();           // Runs the slider code.
+        validate();         // Runs the validate code as soon as the body is ready.
+        auto_submit();      // Tries to submit the form on page load
+    });
+  </script>
+  
+<div id ="all">
+	<h2>Price and Fuel Consumption</h2>
+<div id = "data">
+    <form id = "car-form">
+	        <div>
+              <label>Car Price: </label>
+              <input type="number" id = "car" name = "name" required>
+              <div id="slider_hor_start"></div>
+            </div>
+			<div>
+              <label>Fuel Consumption: </label>
+              <input type="number" id = "fuel" name = "age" required>
+              <div id="slider_vert_start"></div>
+            </div>
+
+		<input id = "button" type = "button" value = "Add" onclick = "AddData()">
+        <input id = "button" type = "button" value = "Reset" onclick = "ResetForm()">
+    </form>
+</div>
+</div>
+   
+
+        <!-- Old Tables will be saved here -->
+        <div id="tabs">
+          <ul>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-1"></div>
+    </div>
+		<h3>Table Summary</h3>
+		<div>
+		        <table id = "list" cellspacing = "0px" cellpadding = "20px" text-align = "center">
+            <thead>
+                <tr>
+					<td>Summary</td>
+                    <td>Car Price</td>
+                    <td>Fuel Consumption</td>
+                </tr>
+            </thead>
+            <tbody>
+			</tbody>
+		</div>
+
+        <div class="container">
+            <div class="tab tab-1">
+			<form id ="post">
+                <table class="table1" id="table1" border="1">
+                    <tr>
+                        <th>Price/Fuel consumption</th>
+                        <th><input id="R1" type="number" name="p1" placeholder="Price 1"></th>
+                        <th><input id="R2" type="number" name="p2" placeholder="Price 2"></th>
+						<th><input id="R3" type="number" name="p3" placeholder="Price 3"></th>
+						<th><input id="R4" type="number" name="p4" placeholder="Price 4"></th>
+						<th><input id="R5" type="number" name="p5" placeholder="Price 5"></th>
+                    </tr>
+                    <tr id="show_1">
+                        <th><input id="C1" type="number" name="C1" placeholder="Mpg 1"></th>
+                        <td id="oneone" >11</td>
+                        <td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+                    </tr>
+                    <tr id="show_2">
+                        <th><input id="C2" type="number" name="C2" placeholder="Mpg 2"></th>
+                        <td>21</td>
+                        <td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+                    </tr>
+                    <tr id="show_3">
+                        <th><input id="C3" type="number" name="C3" placeholder="Mpg 3"></th>
+                        <td>31</td>
+                        <td>32</td>
+						<td>33</td>
+						<td>34</td>
+						<td>35</td>
+                    </tr>
+					 <tr id="show_4">
+                        <th><input id="C4" type="number" name="C4" placeholder="Mpg 4"></th>
+                        <td>41</td>
+                        <td>42</td>
+						<td>43</td>
+						<td>44</td>
+						<td>45</td>
+                    </tr>
+					<tr id="show_5">
+                        <th><input id="C5" type="number" name="C5" placeholder="Mpg 5"></th>
+                        <td>51</td>
+                        <td>52</td>
+						<td>53</td>
+						<td>54</td>
+						<td>55</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+			<p> Please Enter: <input id="month" name="mily" type="number" placeholder="Miles Driven Per Month"> <button onclick="myFunction()">Calcuate</button></p>
+            </div>
+        </div>
+		</form>
+</body>
+</html>
